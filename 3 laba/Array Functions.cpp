@@ -34,7 +34,7 @@ void Array::remove(int index)
 	index--;
 	if (index > size)
 	{
-		cout << "Íîìåð ýëåìåíòà êîòîðûé âû õîòèòå óäàëèòü áîëüøå ðàçìåðà ìàññèâà" << endl;
+		cout << "Номер элемента который вы хотите удалить больше размера массива" << endl;
 		return;
 	}
 	for (int i = index; i < size; i++)

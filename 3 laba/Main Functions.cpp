@@ -12,7 +12,7 @@ double getdoubleValue()
 			cin.clear();
 			cin.ignore();
 			system("cls");
-			cout << "Ââåäåíî íåïðàâèëüíîå ÷èñëî, ïîâòîðèòå ââîä" << endl;
+			cout << "Введено неправильное число, повторите ввод" << endl;
 		}
 		else
 		{
@@ -33,7 +33,7 @@ int getintValue()
 			cin.clear();
 			cin.ignore();
 			system("cls");
-			cout << "Ââåäåíî íåïðàâèëüíîå ÷èñëî, ïîâòîðèòå ââîä" << endl;
+			cout << "Введено неправильное число, повторите ввод" << endl;
 		}
 		else
 		{
@@ -44,9 +44,9 @@ int getintValue()
 
 void sort(Array& Nums)
 {
-	cout << "Ââåäèòå 1 ÷òîáû îòñîðòèðîâàòü ïî óáûâàíèþ" << endl;
-	cout << "Ââåäèòå 2 ÷òîáû îòñîðòèðîâàòü ïî âîçðàñòàíèþ" << endl;
-	cout << "Ââåäèòå ëþáîå äðóãîå ÷èñëî ÷òîáû âûéòè" << endl;
+	cout << "Введите 1 чтобы отсортировать по убыванию" << endl;
+	cout << "Введите 2 чтобы отсортировать по возрастанию" << endl;
+	cout << "Введите любое другое число чтобы выйти" << endl;
 	int choose = getintValue();
 	if (choose == 1)
 	{
@@ -64,12 +64,12 @@ void sort(Array& Nums)
 
 void chooseinstr()
 {
-	cout << "Ââåäèòå 1 ÷òîáû äîáàâèòü ýëåìåíò" << endl;
-	cout << "Ââåäèòå 2 ÷òîáû óäàëèòü ýëåìåíò ïî çíà÷åíèþ" << endl;
-	cout << "Ââåäèòå 3 ÷òîáû óäàëèòü ýëåìåíò ïî èíäåêñó" << endl;
-	cout << "Ââåäèòå 4 ÷òîáû âûâåñòè ìàññèâ íà ýêðàí" << endl;
-	cout << "Ââåäèòå 5 ÷òîáû îòñîðòèðîâàòü ìàññèâ" << endl;
-	cout << "Ââåäèòå 6 ÷òîáû âûéòè èç ïðîãðàììû" << endl;
+	cout << "Введите 1 чтобы добавить элемент" << endl;
+	cout << "Введите 2 чтобы удалить элемент по значению" << endl;
+	cout << "Введите 3 чтобы удалить элемент по индексу" << endl;
+	cout << "Введите 4 чтобы вывести массив на экран" << endl;
+	cout << "Введите 5 чтобы отсортировать массив" << endl;
+	cout << "Введите 6 чтобы выйти из программы" << endl;
 }
 
 void fillinarray(Array& Nums)
@@ -88,7 +88,7 @@ void performance(Array& Nums, int choose)
 	{
 	case 1:
 		system("CLS");
-		cout << "Ââåäèòå ÷èñëî êîòîðîå õîòèòå äîáàâèòü" << endl;
+		cout << "Введите число которое хотите добавить" << endl;
 		value = getdoubleValue();
 		Nums.add(value);
 		break;
@@ -96,10 +96,10 @@ void performance(Array& Nums, int choose)
 		system("CLS");
 		if (!Nums.empty())
 		{
-			cout << "Ìàññèâ ïóñò" << endl;
+			cout << "Массив пуст" << endl;
 			break;
 		}
-		cout << "Ââåäèòå ÷èñëî êîòîðîå õîòèòå óäàëèòü" << endl;
+		cout << "Введите число которое хотите удалить" << endl;
 		value = getdoubleValue();
 		Nums.remove(value);
 		break;
@@ -107,10 +107,10 @@ void performance(Array& Nums, int choose)
 		system("CLS");
 		if (!Nums.empty())
 		{
-			cout << "Ìàññèâ ïóñò" << endl;
+			cout << "Массив пуст" << endl;
 			break;
 		}
-		cout << "Ââåäèòå èíäåêñ ÷èñëà êîòîðîå õîòèòå óäàëèòü" << endl;
+		cout << "Введите индекс числа которое хотите удалить" << endl;
 		index = getintValue();
 		Nums.remove(index);
 		break;
@@ -118,7 +118,7 @@ void performance(Array& Nums, int choose)
 		system("CLS");
 		if (!Nums.empty())
 		{
-			cout << "Ìàññèâ ïóñò" << endl;
+			cout << "Массив пуст" << endl;
 			break;
 		}
 		cout << Nums;
@@ -127,7 +127,7 @@ void performance(Array& Nums, int choose)
 		system("CLS");
 		if (!Nums.empty())
 		{
-			cout << "Ìàññèâ ïóñò" << endl;
+			cout << "Массив пуст" << endl;
 			break;
 		}
 		sort(Nums);
