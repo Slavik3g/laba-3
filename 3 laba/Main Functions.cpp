@@ -94,7 +94,7 @@ void performance(Array& Nums, int choose)
 		break;
 	case 2:
 		system("CLS");
-		if (!Nums.empty())
+		if (Nums.empty())
 		{
 			cout << "Массив пуст" << endl;
 			break;
@@ -105,7 +105,7 @@ void performance(Array& Nums, int choose)
 		break;
 	case 3:
 		system("CLS");
-		if (!Nums.empty())
+		if (Nums.empty())
 		{
 			cout << "Массив пуст" << endl;
 			break;
@@ -116,7 +116,7 @@ void performance(Array& Nums, int choose)
 		break;
 	case 4:
 		system("CLS");
-		if (!Nums.empty())
+		if (Nums.empty())
 		{
 			cout << "Массив пуст" << endl;
 			break;
@@ -125,7 +125,7 @@ void performance(Array& Nums, int choose)
 		break;
 	case 5:
 		system("CLS");
-		if (!Nums.empty())
+		if (Nums.empty())
 		{
 			cout << "Массив пуст" << endl;
 			break;

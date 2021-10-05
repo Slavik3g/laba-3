@@ -81,8 +81,9 @@ void Array::add(Double x)
 bool Array::empty()
 {
 	if (size == 0)
+		return 1;
+	else 
 		return 0;
-	else 1;
 
 }
 Array::Array()

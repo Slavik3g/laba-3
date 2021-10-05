@@ -55,6 +55,8 @@ bool Double::operator!=(double x)
 	return value != x;
 }
 
+
+
 Double::Double()
 {
 	value = 0;
